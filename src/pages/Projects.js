@@ -101,8 +101,8 @@ const listContent = [
     framework: "Ruby on Rails, React.js",
     description:
       "Logged in users can create, edit, and delete apartment information.",
-    websiteLink: "",
-    githubLink: ""
+    websiteLink: "https://apartment-frontend.netlify.com/",
+    githubLink: "https://github.com/misunchoi?utf8=%E2%9C%93&tab=repositories&q=apartment&type=&language="
   },
   {
     icon: profile,
@@ -112,8 +112,8 @@ const listContent = [
     framework: "React.js",
     description:
       "Developed a portfolio website using React.js and Material UI.",
-    websiteLink: "",
-    githubLink: ""
+    websiteLink: "https://michelle-misun-choi.netlify.com/",
+    githubLink: "https://github.com/misunchoi/portfolio"
   },
   {
     icon: tictactoe,
@@ -123,8 +123,8 @@ const listContent = [
     framework: "React.js",
     description:
       "Classic TicTacToe game where users can choose an emoji to play.",
-    websiteLink: "",
-    githubLink: ""
+    websiteLink: "https://misunchoi.netlify.com/tictactoe",
+    githubLink: "https://github.com/misunchoi/misun-portfolio/blob/master/src/pages/TicTacToe.js"
   },
   {
     icon: website,
@@ -134,8 +134,8 @@ const listContent = [
     framework: "Gatsby(React), Moqui(Java)",
     description:
       "Developed a static website utilizing Material-UI for styling, Yup and Formik for form validations, and Stripe to process donations.",
-    websiteLink: "",
-    githubLink: ""
+    websiteLink: "https://gnd.alpha.mkdecision.com/",
+    githubLink: "https://github.com/tfe-gnd-project/GND-website"
   }
 ];
 
