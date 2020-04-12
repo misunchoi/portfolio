@@ -111,8 +111,19 @@ const listContent = [
     title: "PORTFOLIO WEBSITE",
     framework: "React.js",
     description:
-      "Developed a portfolio website using React.js and Material UI.",
+      "Developed a portfolio website using React.js and Material UI. Utilized Figma for web design.",
     websiteLink: "https://michelle-misun-choi.netlify.com/",
+    githubLink: "https://github.com/misunchoi/portfolio"
+  },
+  {
+    icon: profile,
+    iconWidth: 65,
+    iconMarginTop: '13px',
+    title: "PORTFOLIO WEBSITE DESIGN",
+    framework: "Figma",
+    description:
+      "Developed design for the portfolio website using Figma.",
+    websiteLink: "https://www.figma.com/file/Yb0L8d33qSOSbDQPcjfFXt/Misun-s-Portfolio?node-id=0%3A1",
     githubLink: "https://github.com/misunchoi/portfolio"
   },
   {
