@@ -96,7 +96,6 @@ const listContent = [
   {
     icon: house,
     iconWidth: 75,
-    iconMarginTop: '5px',
     title: "APARTMENT APP",
     framework: "Ruby on Rails, React.js",
     description:
@@ -107,7 +106,6 @@ const listContent = [
   {
     icon: profile,
     iconWidth: 65,
-    iconMarginTop: '13px',
     title: "PORTFOLIO WEBSITE",
     framework: "React.js",
     description:
@@ -118,7 +116,6 @@ const listContent = [
   {
     icon: profile,
     iconWidth: 65,
-    iconMarginTop: '13px',
     title: "PORTFOLIO WEBSITE DESIGN",
     framework: "Figma",
     description:
@@ -129,7 +126,6 @@ const listContent = [
   {
     icon: tictactoe,
     iconWidth: 65,
-    iconMarginTop: '13px',
     title: "TIC TAC TOE",
     framework: "React.js",
     description:
@@ -140,7 +136,6 @@ const listContent = [
   {
     icon: website,
     iconWidth: 85,
-    iconMarginTop: '11px',
     title: "GND WEBSITE",
     framework: "Gatsby(React), Moqui(Java)",
     description:
@@ -159,7 +154,7 @@ function Projects() {
           return (
             <List>
               <IconAndTextWrapper>
-                <Icon src={item.icon} width={item.iconWidth} marginTop={item.iconMarginTop}/>
+                <Icon src={item.icon} width={item.iconWidth}/>
                 <div>
                   <TitleWrapper>
                     <Title>{item.title}</Title>
