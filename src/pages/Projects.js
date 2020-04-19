@@ -24,7 +24,6 @@ const BackgroundImage = styled.div`
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 30%;
 `;
 
 const Background = styled.img`
@@ -35,7 +34,6 @@ const Background = styled.img`
   object-fit: cover;
   position: fixed;
   z-index: -1;
-  opacity: 30%;
 `;
 
 const Container = styled.div`
