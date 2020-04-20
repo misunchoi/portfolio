@@ -148,18 +148,11 @@ const Icon = styled.img`
   }
 `;
 
+const IconWrapper = styled.div`
+  width: 100px;
+`;
+
 const listContent = [
-  {
-    icon: house,
-    iconWidth: 75,
-    title: "APARTMENT APP",
-    framework: "Ruby on Rails, React.js",
-    description:
-      "Logged in users can create, edit, and delete apartment information.",
-    websiteLink: "https://apartment-frontend.netlify.com/",
-    githubLink:
-      "https://github.com/misunchoi?utf8=%E2%9C%93&tab=repositories&q=apartment&type=&language="
-  },
   {
     icon: react,
     iconWidth: 75,
@@ -172,7 +165,7 @@ const listContent = [
   },
   {
     icon: design,
-    iconWidth: 65,
+    iconWidth: 75,
     title: "PORTFOLIO DESIGN",
     framework: "Figma",
     description: "Developed design for the portfolio website using Figma.",
@@ -180,26 +173,37 @@ const listContent = [
       "https://www.figma.com/file/Yb0L8d33qSOSbDQPcjfFXt/Misun-s-Portfolio?node-id=0%3A1",
     githubLink: "https://github.com/misunchoi/portfolio"
   },
-  {
-    icon: tictactoe,
-    iconWidth: 65,
-    title: "TIC TAC TOE",
-    framework: "React.js",
-    description:
-      "Classic TicTacToe game where users can choose an emoji to play.",
-    websiteLink: "https://misunchoi.netlify.com/tictactoe",
-    githubLink:
-      "https://github.com/misunchoi/misun-portfolio/blob/master/src/pages/TicTacToe.js"
-  },
+  // {
+  //   icon: tictactoe,
+  //   iconWidth: 65,
+  //   title: "TIC TAC TOE",
+  //   framework: "React.js",
+  //   description:
+  //     "Classic TicTacToe game where users can choose an emoji to play.",
+  //   websiteLink: "https://misunchoi.netlify.com/tictactoe",
+  //   githubLink:
+  //     "https://github.com/misunchoi/misun-portfolio/blob/master/src/pages/TicTacToe.js"
+  // },
   {
     icon: website,
-    iconWidth: 85,
+    iconWidth: 75,
     title: "GND WEBSITE",
     framework: "Gatsby(React), Moqui(Java)",
     description:
       "Developed a static website utilizing Material-UI for styling, Yup and Formik for form validations, and Stripe to process donations.",
     websiteLink: "https://gnd.alpha.mkdecision.com/",
     githubLink: "https://github.com/tfe-gnd-project/GND-website"
+  },
+  {
+    icon: house,
+    iconWidth: 75,
+    title: "APARTMENT APP",
+    framework: "Ruby on Rails, React.js",
+    description:
+      "Logged in users can create, edit, and delete apartment information.",
+    websiteLink: "https://apartment-frontend.netlify.com/",
+    githubLink:
+      "https://github.com/misunchoi?utf8=%E2%9C%93&tab=repositories&q=apartment&type=&language="
   }
 ];
 
@@ -214,6 +218,7 @@ function Projects() {
           return (
             <>
               <Icon src={item.icon} width={item.iconWidth} />
+
               <Title>{item.title}</Title>
               <Framework>{item.framework}</Framework>
               <Description>{item.description}</Description>
@@ -243,7 +248,9 @@ function Projects() {
           return (
             <List>
               <IconAndTextWrapper>
-                <Icon src={item.icon} width={item.iconWidth} />
+                <IconWrapper>
+                  <Icon src={item.icon} width={item.iconWidth} />
+                </IconWrapper>
                 <div>
                   <TitleWrapper>
                     <Title>{item.title}</Title>

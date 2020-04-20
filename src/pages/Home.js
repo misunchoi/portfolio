@@ -87,10 +87,10 @@ function Home() {
       <Container>
         <Name>Mi Sun Choi</Name>
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
-        <JobTitle>UI Engineer in San Diego</JobTitle>
+        <JobTitle>Software Engineer in <br/> San Diego</JobTitle>
         <Description>
           Welcome to my portfolio website! I’m seeking opportunities to grow in
-          my technical skills as a software developer :)
+          my technical skills as a software developer.
         </Description>
         <Button to="/projects">Explore projects</Button>
         <Button to="/contact">Contact me</Button>
