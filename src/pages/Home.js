@@ -80,6 +80,10 @@ const Button = styled(Link)`
   margin: 0.5em 0;
 `;
 
+const SanDiego = styled.span`
+  display: inline-block;
+`;
+
 function Home() {
   return (
     <Wrapper>
@@ -87,7 +91,7 @@ function Home() {
       <Container>
         <Name>Mi Sun Choi</Name>
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
-        <JobTitle>Software Engineer in <br/> San Diego</JobTitle>
+        <JobTitle>Software Engineer in <SanDiego>San Diego</SanDiego></JobTitle>
         <Description>
           Welcome to my portfolio website! I’m seeking opportunities to grow in
           my technical skills as a software developer.
