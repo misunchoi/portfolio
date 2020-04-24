@@ -91,6 +91,9 @@ function Home() {
       <Container>
         <Name>Mi Sun Choi</Name>
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
+        <Pronunciation>I also go by  <JobTitle>Michelle Choi</JobTitle></Pronunciation>
+        
+
         <JobTitle>Software Engineer in <SanDiego>San Diego</SanDiego></JobTitle>
         <Description>
           Welcome to my portfolio website! I’m seeking opportunities to grow in
