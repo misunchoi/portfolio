@@ -63,9 +63,14 @@ const Title = styled.td`
   }
 `;
 
-const Content = styled.div`
-  font-size: 18px;
+const Content = styled.a`
+  font-size: inherit;
   text-align: center;
+  color: inherit;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 
 const Icon = styled.td`
@@ -78,13 +83,13 @@ function Contact() {
       <BackgroundImage />
       <MobileContainer>
         <Title>Email</Title>
-        <Content>choi.msc033@gmail.com</Content>
+        <Content href="mailto:choi.msc033@gmail.com">choi.msc033@gmail.com</Content>
 
         <Title>Phone</Title>
-        <Content>(619) 880-0527</Content>
+        <Content href="tel:1-619-880-0527">(619) 880-0527</Content>
 
         <Title>LinkedIn</Title>
-        <Content>linkedin.com/in/michelle-misun-choi/</Content>
+        <Content href="https://linkedin.com/in/michelle-misun-choi" rel="noopener noreferrer" target="_blank">linkedin.com/in/michelle-misun-choi</Content>
       </MobileContainer>
 
       <Container>
@@ -94,21 +99,21 @@ function Contact() {
             <Icon>
               <img src={email} width={55} />
             </Icon>
-            <td>choi.msc033@gmail.com</td>
+            <td><Content href="mailto:choi.msc033@gmail.com">choi.msc033@gmail.com</Content></td>
           </tr>
           <tr>
             <Title>Phone</Title>
             <Icon>
               <img src={phone} width={55} />
             </Icon>
-            <td>‪(619) 880-0527</td>
+            <td>‪<Content href="tel:1-619-880-0527">(619) 880-0527</Content></td>
           </tr>
           <tr>
             <Title>LinkedIn</Title>
             <Icon>
               <img src={linkedIn} width={55} />
             </Icon>
-            <td>‪linkedin.com/in/michelle-misun-choi/</td>
+            <td><Content href="https://linkedin.com/in/michelle-misun-choi" rel="noopener noreferrer" target="_blank">linkedin.com/in/michelle-misun-choi</Content></td>
           </tr>
         </table>
       </Container>

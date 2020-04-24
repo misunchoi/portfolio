@@ -98,7 +98,6 @@ function Home() {
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
         <Pronunciation>I also go by  <Michelle>Michelle</Michelle></Pronunciation>
         
-
         <JobTitle>Software Engineer in <SanDiego>San Diego</SanDiego></JobTitle>
         <Description>
           Welcome to my portfolio website! I’m seeking opportunities to grow in
