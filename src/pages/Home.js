@@ -84,6 +84,11 @@ const SanDiego = styled.span`
   display: inline-block;
 `;
 
+const Michelle = styled.span`
+  display: inline-block;
+  font-size: 36px;
+`;
+
 function Home() {
   return (
     <Wrapper>
@@ -91,7 +96,7 @@ function Home() {
       <Container>
         <Name>Mi Sun Choi</Name>
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
-        <Pronunciation>I also go by  <JobTitle>Michelle Choi</JobTitle></Pronunciation>
+        <Pronunciation>I also go by  <Michelle>Michelle</Michelle></Pronunciation>
         
 
         <JobTitle>Software Engineer in <SanDiego>San Diego</SanDiego></JobTitle>
