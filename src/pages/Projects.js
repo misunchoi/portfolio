@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-  justfify-content: center;
+  justify-content: center;
 `;
 
 const BackgroundImage = styled.div`

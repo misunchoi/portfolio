@@ -1,7 +1,9 @@
 import React from "react";
 import homeBackground from "../images/home-background.jpg";
+import homeBackgroundThumb from "../images/home-background-thumbnail.jpeg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Image from "../components/LoadImage";
 
 const Wrapper = styled.div`
   color: white;
@@ -92,7 +94,8 @@ const Michelle = styled.span`
 function Home() {
   return (
     <Wrapper>
-      <BackgroundImage />
+      <Image src={homeBackground} thumb={homeBackgroundThumb} alt=""/>
+      {/* <BackgroundImage /> */}
       <Container>
         <Name>Mi Sun Choi</Name>
         <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
