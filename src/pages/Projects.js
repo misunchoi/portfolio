@@ -170,7 +170,7 @@ const listContent = [
     framework: "Figma",
     description: "Developed design for the portfolio website using Figma.",
     websiteLink:
-      "https://www.figma.com/file/Yb0L8d33qSOSbDQPcjfFXt/Misun-s-Portfolio?node-id=0%3A1",
+      "https://www.figma.com/file/x5U5vlgK7Mr78DLod449Wl/Portfolio-2.0?node-id=0%3A1",
     githubLink: "https://github.com/misunchoi/portfolio"
   },
   // {
