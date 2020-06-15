@@ -13,7 +13,7 @@ const RowWrapper = styled.div`
 const Description = styled.div`
   background-color: #dcdbdb;
   margin: 1em 1em 1em 4em;
-  padding: 3em;
+  padding: 4em;
   width: 468px;
 `;
 

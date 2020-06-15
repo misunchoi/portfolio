@@ -15,14 +15,20 @@ const RowWrapper = styled.div`
 const Description = styled.div`
   background-color: #dcdbdb;
   margin: 1em 1em 1em 4em;
-  padding: 1em;
+  padding: 4em;
+  width: 468px;
+`;
+
+const StyledImage = styled.img`
+  margin: 1em;
+  box-shadow: -40px 40px #85EDF3;
   width: 468px;
 `;
 
 const Home = () => {
   return (
     <RowWrapper>
-      <Image src={profilePicture} thumb={profilePictureThumb} alt="Profile picture" width={468}/>
+      <StyledImage src={profilePicture} alt="Profile picture"/>
       <Description>
         <h1>Mi Sun Choi</h1>
         <h2>aka Michelle</h2>
