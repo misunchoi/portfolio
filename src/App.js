@@ -11,7 +11,7 @@ const Header = styled.div`
   top: 0;
   width: 100vw;
   height: 5em;
-  // background-color: rgba(196, 196, 196, 0.75);
+  background: white;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ const Link = styled(NavLink)`
     width: 150px;
     font-size: 24px;
     font-weight: 600;
-    text-tranform: none;
+    text-transform: none;
     opacity: 100%;
     text-align: center;
 
