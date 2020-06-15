@@ -1,115 +1,34 @@
 import React from "react";
-import homeBackground from "../images/home-background.jpg";
-import homeBackgroundThumb from "../images/home-background-thumbnail.jpeg";
+import profilePicture from "../images/profile-picture.png";
+import profilePictureThumb from "../images/home-background-thumbnail.jpeg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Image from "../components/LoadImage";
 
-const Wrapper = styled.div`
-  color: white;
-  height: 100vh;
-  width: 100vw;
-`;
-
-const BackgroundImage = styled.div`
-  height: 100%;
-  width: 100%;
-  background-image: url(${homeBackground});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-
-  @media only screen and (max-width: 1024px) {
-    background-position: right;
-  }
-`;
-
-const Container = styled.div`
+const RowWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: auto;
-  max-width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  @media only screen and (min-width: 1024px) {
-    width: 450px;
-    max-width: 1200px;
-    left: 75%;
-  }
-`;
-
-const Name = styled.div`
-  font-size: 64px;
-
-  @media only screen and (max-width: 1024px) {
-    font-size: 48px;
-  }
-`;
-
-const Pronunciation = styled.div`
-  font-size: 24px;
-  margin-bottom: 0.5em;
-`;
-
-const JobTitle = styled.div`
-  font-size: 36px;
-  margin-bottom: 0.25em;
-
-  @media only screen and (max-width: 1024px) {
-    font-size: 32px;
-  }
+  width: fit-content;
 `;
 
 const Description = styled.div`
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
+  background-color: #dcdbdb;
+  margin: 1em 1em 1em 4em;
+  padding: 1em;
+  width: 468px;
 `;
 
-const Button = styled(Link)`
-  width: 260px;
-  height: 54px;
-  font-size: 24px;
-  border: 1px solid white;
-  background-color: rgba(196, 196, 196, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin: 0.5em 0;
-`;
-
-const SanDiego = styled.span`
-  display: inline-block;
-`;
-
-const Michelle = styled.span`
-  display: inline-block;
-  font-size: 36px;
-`;
-
-function Home() {
+const Home = () => {
   return (
-    <Wrapper>
-      <Image src={homeBackground} thumb={homeBackgroundThumb} alt=""/>
-      {/* <BackgroundImage /> */}
-      <Container>
-        <Name>Mi Sun Choi</Name>
-        <Pronunciation>/mē sən ˈCHoi/</Pronunciation>
-        <Pronunciation>I also go by  <Michelle>Michelle</Michelle></Pronunciation>
-        
-        <JobTitle>Software Engineer in <SanDiego>San Diego</SanDiego></JobTitle>
-        <Description>
-          Welcome to my portfolio website! I’m seeking opportunities to grow in
-          my technical skills as a software developer.
-        </Description>
-        <Button to="/projects">Explore projects</Button>
-        <Button to="/contact">Contact me</Button>
-      </Container>
-    </Wrapper>
+    <RowWrapper>
+      <Image src={profilePicture} thumb={profilePictureThumb} alt="Profile picture" width={468}/>
+      <Description>
+        <h1>Mi Sun Choi</h1>
+        <h2>aka Michelle</h2>
+        <p>Welcome to my portfolio website! I have professional experience in React.js, JavaScript, HTML, and CSS. I’m seeking opportunities as a Software Engineer in San Diego :)</p>
+      </Description>
+    </RowWrapper>
   );
 }
 

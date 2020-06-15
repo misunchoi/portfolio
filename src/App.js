@@ -8,9 +8,11 @@ import styled from "styled-components";
 
 const Header = styled.div`
   position: fixed;
-  width: 100%;
-  height: 72px;
-  background-color: rgba(196, 196, 196, 0.75);
+  top: 0;
+  width: 100vw;
+  height: 5em;
+  // background-color: rgba(196, 196, 196, 0.75);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +23,8 @@ const Link = styled(NavLink)`
   && {
     color: black;
     width: 150px;
-	font-size: 24px;
-	font-weight: 600;
+    font-size: 24px;
+    font-weight: 600;
     text-tranform: none;
     opacity: 100%;
     text-align: center;
@@ -34,13 +36,17 @@ const Link = styled(NavLink)`
   }
 `;
 
+const Layout = styled.div`
+  margin: 9em 1em 1em;
+`;
+
 const activeStyle = {
-  color: "white"
+  color: "#4BB3B9",
 };
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header>
         <Link to="/" exact activeStyle={activeStyle}>
           Home
@@ -53,9 +59,11 @@ function App() {
         </Link>
       </Header>
 
-      <Route path="/" component={Home} exact />
-      <Route path="/projects" component={Projects} exact />
-      <Route path="/contact" component={Contact} exact />
+      <Layout>
+        <Route path="/" component={Home} exact />
+        <Route path="/projects" component={Projects} exact />
+        <Route path="/contact" component={Contact} exact />
+      </Layout>
     </div>
   );
 }
