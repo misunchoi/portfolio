@@ -10,6 +10,7 @@ export const Body = styled.div`
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 0.75em;
 `;
 
 export const StyledImage = styled.img`

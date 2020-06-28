@@ -43,9 +43,7 @@ const Projects = () => {
             <Description>
               <Header1>{list.title}</Header1>
               <Body>{list.framework}</Body>
-              <br/>
               <Body>{list.description}</Body>
-              <br/>
               <LinksContainer>
                 <StyledExternalLink
                   href={list.websiteLink}

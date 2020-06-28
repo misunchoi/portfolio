@@ -1,7 +1,7 @@
 import React from "react";
 import profilePicture from "../images/profile-picture.png";
 import styled from "styled-components";
-import { StyledImage } from "../components/CommonStyledComponents";
+import { StyledImage, Header1, Body } from "../components/CommonStyledComponents";
 
 const RowWrapper = styled.div`
   display: flex;
@@ -22,13 +22,13 @@ const Home = () => {
     <RowWrapper>
       <StyledImage src={profilePicture} alt="Profile picture" />
       <Description>
-        <h1>Mi Sun Choi</h1>
-        <h2>aka Michelle</h2>
-        <p>
+        <Header1>Mi Sun Choi</Header1>
+        <Body>aka Michelle</Body>
+        <Body>
           Welcome to my portfolio website! I have professional experience in
           React.js, JavaScript, HTML, and CSS. I’m seeking opportunities as a
           Software Engineer in San Diego :)
-        </p>
+        </Body>
       </Description>
     </RowWrapper>
   );
