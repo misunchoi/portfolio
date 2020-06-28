@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {
   StyledImage,
   StyledExternalLink,
+  Header1,
+  Body,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
 
@@ -23,7 +25,7 @@ const Description = styled.div`
 const LinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 125px;
+  width: 170px;
 `;
 
 const Projects = () => {
@@ -39,9 +41,11 @@ const Projects = () => {
               small
             />
             <Description>
-              <h1>{list.title}</h1>
-              <h2>{list.framework}</h2>
-              <p>{list.description}</p>
+              <Header1>{list.title}</Header1>
+              <Body>{list.framework}</Body>
+              <br/>
+              <Body>{list.description}</Body>
+              <br/>
               <LinksContainer>
                 <StyledExternalLink
                   href={list.websiteLink}
