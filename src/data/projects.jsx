@@ -7,7 +7,7 @@ export const projectDetails = [
   {
     icon: react,
     iconWidth: 75,
-    title: "PORTFOLIO WEBSITE",
+    title: "Portfolio Website",
     framework: "React.js",
     description:
       "Developed a portfolio website using React.js. Utilized Figma for web design.",
@@ -17,7 +17,7 @@ export const projectDetails = [
   {
     icon: design,
     iconWidth: 75,
-    title: "PORTFOLIO DESIGN",
+    title: "Portfolio Design",
     framework: "Figma",
     description: "Developed design for the portfolio website using Figma.",
     websiteLink:
@@ -27,7 +27,7 @@ export const projectDetails = [
   {
     icon: website,
     iconWidth: 75,
-    title: "GND WEBSITE",
+    title: "GND Website",
     framework: "Gatsby(React), Moqui(Java)",
     description:
       "Developed a static website utilizing Material-UI for styling, Yup and Formik for form validations, and Stripe to process donations.",
@@ -37,7 +37,7 @@ export const projectDetails = [
   {
     icon: house,
     iconWidth: 75,
-    title: "APARTMENT APP",
+    title: "Apartment App",
     framework: "Ruby on Rails, React.js",
     description:
       "Logged in users can create, edit, and delete apartment information.",

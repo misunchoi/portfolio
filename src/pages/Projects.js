@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledImage } from "../components/CommonStyledComponents";
+import { StyledImage, StyledExternalLink } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects"
 
 const RowWrapper = styled.div`
@@ -33,20 +33,20 @@ const Projects = () => {
               <h1>{list.title}</h1>
               <h2>{list.framework}</h2>
               <p>{list.description}</p>
-              <a
+              <StyledExternalLink
                 href={list.websiteLink}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Website
-              </a>
-              <a
+              </StyledExternalLink>
+              <StyledExternalLink
                 href={list.githubLink}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Github
-              </a>
+              </StyledExternalLink>
             </Description>
           </RowWrapper>
         );
