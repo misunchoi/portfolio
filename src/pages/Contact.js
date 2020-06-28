@@ -1,7 +1,7 @@
 import React from "react";
 import contactBackground from "../images/contact-image.png";
 import styled from "styled-components";
-import Image from "../components/LoadImage";
+import { StyledImage } from "../components/CommonStyledComponents";
 
 const RowWrapper = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ const Description = styled.div`
 const Contact = () => {
   return (
       <RowWrapper>
-        <Image src={contactBackground} thumb={contactBackground} alt="Profile picture" width={468}/>
+        <StyledImage src={contactBackground} alt="Profile picture" width={468}/>
         <Description>
           <h1>Email</h1>
           <a href="mailto:choi.msc033@gmail.com">choi.msc033@gmail.com</a>
