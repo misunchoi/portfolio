@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import styled from "styled-components";
+import GlobalStyle from "./styles/GlobalStyle";
 
 const Header = styled.div`
   position: fixed;
@@ -17,6 +18,11 @@ const Header = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 999;
+`;
+
+const PlaceHolderHeader = styled.div`
+  width: 100vw;
+  height: 5em;
 `;
 
 const Link = styled(NavLink)`
@@ -37,7 +43,7 @@ const Link = styled(NavLink)`
 `;
 
 const Layout = styled.div`
-  margin: 9em 1em 1em;
+  margin: 1em;
 `;
 
 const activeStyle = {
@@ -47,6 +53,8 @@ const activeStyle = {
 function App() {
   return (
     <div>
+      <GlobalStyle/>
+      <PlaceHolderHeader />
       <Header>
         <Link to="/" exact activeStyle={activeStyle}>
           Home

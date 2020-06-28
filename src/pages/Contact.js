@@ -3,8 +3,7 @@ import contactBackground from "../images/contact-image.png";
 import styled from "styled-components";
 import {
   StyledImage,
-  StyledExternalLink,
-  Header1,
+  Section,
 } from "../components/CommonStyledComponents";
 import { contactDetails } from "../data/contact";
 
@@ -28,21 +27,31 @@ const ContactDetailsContainer = styled.div`
 
 const Contact = () => {
   return (
-    <RowWrapper>
-      <StyledImage src={contactBackground} alt="Profile picture" width={468} />
-      <Description>
-        {contactDetails.map(contact => {
-          return (
-            <ContactDetailsContainer>
-              <Header1>{contact.title}</Header1>
-              <StyledExternalLink href={contact.link}>
-                {contact.linkText}
-              </StyledExternalLink>
-            </ContactDetailsContainer>
-          )
-        })}
-      </Description>
-    </RowWrapper>
+    <Section>
+      <RowWrapper>
+        <StyledImage
+          src={contactBackground}
+          alt="Profile picture"
+          width={468}
+        />
+        <Description>
+          {contactDetails.map((contact) => {
+            return (
+              <ContactDetailsContainer>
+                <h1>{contact.title}</h1>
+                <a
+                  href={contact.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {contact.linkText}
+                </a>
+              </ContactDetailsContainer>
+            );
+          })}
+        </Description>
+      </RowWrapper>
+    </Section>
   );
 };
 

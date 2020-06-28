@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {
   StyledImage,
-  StyledExternalLink,
-  Header1,
-  Body,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
 
@@ -41,24 +38,24 @@ const Projects = () => {
               small
             />
             <Description>
-              <Header1>{list.title}</Header1>
-              <Body>{list.framework}</Body>
-              <Body>{list.description}</Body>
+              <h1>{list.title}</h1>
+              <p>{list.framework}</p>
+              <p>{list.description}</p>
               <LinksContainer>
-                <StyledExternalLink
+                <a
                   href={list.websiteLink}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   Website
-                </StyledExternalLink>
-                <StyledExternalLink
+                </a>
+                <a
                   href={list.githubLink}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   Github
-                </StyledExternalLink>
+                </a>
               </LinksContainer>
             </Description>
           </RowWrapper>
