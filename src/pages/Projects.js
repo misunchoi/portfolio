@@ -27,7 +27,7 @@ const Projects = () => {
               src={list.icon}
               thumb={list.icon}
               alt="Profile picture"
-              width={244}
+              small
             />
             <Description>
               <h1>{list.title}</h1>
