@@ -45,23 +45,148 @@ const Logo = styled.div`
   left: 20px;
 `;
 
+const StyledBurger = styled.button`
+  position: absolute;
+  right: 2rem;
+  top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${({ theme, open }) =>
+      open ? theme.primaryDark : theme.primaryLight};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    :nth-child(2) {
+      opacity: ${({ open }) => (open ? "0" : "1")};
+      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+    }
+
+    :nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+    }
+  }
+`;
+
+export const StyledMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: ${({ theme }) => theme.primaryLight};
+  height: 100vh;
+  text-align: right;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%;
+  }
+
+  a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: ${({ theme }) => theme.primaryDark};
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &:hover {
+      color: ${({ theme }) => theme.primaryHover};
+    }
+  }
+`;
+
+const MobileNavBar = styled.div`
+  display: block;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}px) {
+    display: none;
+  }
+`;
+
+const DesktopNavBar = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+    display: none;
+  }
+`;
+
 function Header() {
   const activeStyle = { color: "#4BB3B9" };
+  const [open, setOpen] = React.useState(false);
 
   return (
     <>
       <PlaceHolder />
       <NavBar>
         <Logo>MC</Logo>
-        <Link to="/" exact activeStyle={activeStyle}>
-          Home
-        </Link>
-        <Link to="/projects" exact activeStyle={activeStyle}>
-          Projects
-        </Link>
-        <Link to="/contact" exact activeStyle={activeStyle}>
-          Contact
-        </Link>
+
+        <MobileNavBar>
+          <StyledBurger open={open} onClick={() => setOpen(!open)}>
+            <div />
+            <div />
+            <div />
+          </StyledBurger>
+          <StyledMenu open={open}>
+            <Link to="/" exact activeStyle={activeStyle}>
+              Home
+            </Link>
+            <Link to="/projects" exact activeStyle={activeStyle}>
+              Projects
+            </Link>
+            <Link to="/contact" exact activeStyle={activeStyle}>
+              Contact
+            </Link>
+          </StyledMenu>
+        </MobileNavBar>
+
+        <DesktopNavBar>
+          <Link to="/" exact activeStyle={activeStyle}>
+            Home
+          </Link>
+          <Link to="/projects" exact activeStyle={activeStyle}>
+            Projects
+          </Link>
+          <Link to="/contact" exact activeStyle={activeStyle}>
+            Contact
+          </Link>
+        </DesktopNavBar>
       </NavBar>
     </>
   );

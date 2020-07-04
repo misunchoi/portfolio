@@ -3,10 +3,11 @@ import { Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/GlobalStyle";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { theme } from "./styles/theme";
 
 const Content = styled.div`
   margin: 1em;
@@ -21,6 +22,7 @@ const Layout = styled.div`
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <Layout>
       <GlobalStyle />
       <Header />
@@ -33,6 +35,7 @@ function App() {
 
       <Footer />
     </Layout>
+    </ThemeProvider>
   );
 }
 
