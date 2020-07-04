@@ -12,6 +12,7 @@ const RowWrapper = styled.div`
   flex-direction: row;
   margin: auto;
   width: fit-content;
+  flex-wrap: wrap;
 `;
 
 const Description = styled.div`
