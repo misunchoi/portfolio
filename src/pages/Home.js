@@ -1,25 +1,11 @@
 import React from "react";
 import profilePicture from "../images/profile-picture.png";
-import styled from "styled-components";
 import {
   StyledImage,
   Section,
+  Description,
+  RowWrapper
 } from "../components/CommonStyledComponents";
-
-const RowWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: fit-content;
-  flex-wrap: wrap;
-`;
-
-const Description = styled.div`
-  background-color: #dcdbdb;
-  margin: 1em 1em 1em 4em;
-  padding: 4em;
-  width: 468px;
-`;
 
 const Home = () => {
   return (

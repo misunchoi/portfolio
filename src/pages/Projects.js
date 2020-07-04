@@ -1,23 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  StyledImage,
+  StyledImage, RowWrapper, Description,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
-
-const RowWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: 2em auto;
-  width: fit-content;
-`;
-
-const Description = styled.div`
-  background-color: #dcdbdb;
-  margin: 1em 1em 1em 4em;
-  padding: 1em;
-  width: 774px;
-`;
 
 const LinksContainer = styled.div`
   display: flex;
@@ -37,7 +23,7 @@ const Projects = () => {
               alt="Profile picture"
               small
             />
-            <Description>
+            <Description long>
               <h1>{list.title}</h1>
               <p>{list.framework}</p>
               <p>{list.description}</p>
