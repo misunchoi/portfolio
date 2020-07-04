@@ -21,6 +21,7 @@ export const StyledImage = styled.img`
     margin: 1em;
     box-shadow: ${props => props.small ? '-1em 1em' : '-2em 2em'} #85EDF3;
     width: ${props => props.small ? '244' : '468'}px;
+    object-fit: cover;
 
     @media (max-width: ${props => props.theme.breakpoints.sm}px) {
         width: 80%;

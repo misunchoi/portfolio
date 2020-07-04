@@ -1,14 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-export const sizes = {
-  wide: 1600,
-  retina: 1440,
-  desktop: 1280,
-  laptop: 1024,
-  tablet: 768,
-  phone: 640,
-};
-
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
@@ -62,7 +53,13 @@ const GlobalStyle = createGlobalStyle`
         font-weight: normal;
         font-size: 24px;
         line-height: 28px;
+
+        @media (max-width: ${props => props.theme.breakpoints.sm}px) {
+          font-size: 17px;
+      }
     }
+
+    
   }
 `;
 
