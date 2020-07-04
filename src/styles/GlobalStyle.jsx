@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     // font-size: 62.5%; // Set 1rem = 10px
     width: 100%;
-    font-family: "Roboto Mono", monospace;
   }
 
   *,
@@ -24,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    font-family: "Roboto Mono", monospace;
     margin: 0;
     width: 100%;
     min-height: 100%;
