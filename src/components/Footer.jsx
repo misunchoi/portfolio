@@ -6,33 +6,46 @@ const Container = styled.div`
   color: white;
   height: 5em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+`;
+
+const Link = styled.a`
+  color: white;
+  margin: 1em;
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
 `;
 
 const footerLinks = [
   {
     icon: "",
     iconWidth: 75,
-    label: "Github",
-    linkUrl: "https://github.com/misunchoi",
+    label: "LinkedIn",
+    linkUrl: "https://www.linkedin.com/in/michelle-misun-choi/",
   },
   {
     icon: "",
     iconWidth: 75,
-    label: "LinkedIn",
-    linkUrl: "https://www.linkedin.com/in/michelle-misun-choi/",
+    label: "Github",
+    linkUrl: "https://github.com/misunchoi",
   },
 ];
 
 function Footer() {
   return (
     <Container>
-      {footerLinks.map((data) => {
-        return (
-          <a href={data.linkUrl} rel="noopener noreferrer" target="_blank">
-            {data.label}
-          </a>
-        );
-      })}
+      <LinkWrapper>
+        {footerLinks.map((data) => {
+          return (
+            <Link href={data.linkUrl} rel="noopener noreferrer" target="_blank">
+              {data.label}
+            </Link>
+          );
+        })}
+      </LinkWrapper>
     </Container>
   );
 }
