@@ -37,15 +37,22 @@ const Link = styled(NavLink)`
   }
 `;
 
-const activeStyle = {
-  color: "#4BB3B9",
-};
+const Logo = styled.div`
+  font-family: "Roboto Mono", monospace;
+  font-size: 58px;
+  font-weight: 200;
+  position: absolute;
+  left: 20px;
+`;
 
 function Header() {
+  const activeStyle = { color: "#4BB3B9" };
+
   return (
     <>
       <PlaceHolder />
       <NavBar>
+        <Logo>MC</Logo>
         <Link to="/" exact activeStyle={activeStyle}>
           Home
         </Link>
