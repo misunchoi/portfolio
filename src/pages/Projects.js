@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  StyledImage, RowWrapper, Description,
+  StyledImage, RowWrapper, Description, Section,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
 
 const LinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  width: 200px;
 `;
 
 const Projects = () => {
   return (
-    <div>
+    <Section>
       {projectDetails.map((list) => {
         return (
           <RowWrapper key={list.title}>
@@ -47,7 +47,7 @@ const Projects = () => {
           </RowWrapper>
         );
       })}
-    </div>
+    </Section>
   );
 };
 
