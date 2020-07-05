@@ -103,9 +103,9 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 80%;
-  }
+  ${({ theme }) => theme.media.down.md`
+    width: 300px;
+  `}
 
   a {
     font-size: 2rem;
@@ -118,11 +118,11 @@ export const StyledMenu = styled.nav`
     transition: color 0.3s linear;
     padding: 1em;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+    ${({ theme }) => theme.media.down.md`
       font-size: 1.5rem;
       text-align: center;
       min-width: 100%;
-    }
+    `}
 
     &:hover {
       color: ${({ theme }) => theme.primaryHover};

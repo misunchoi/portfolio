@@ -8,36 +8,28 @@ const breakpoints = {
   xl: 1200,
 };
 
-const maxMediaQueries = Object.keys(breakpoints).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-width: ${breakpoints[label]}px) {
-      ${args};
-    }
-  `;
-  return acc;
-}, {});
-
-const minMediaQueries = Object.keys(breakpoints).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (min-width: ${breakpoints[label] + 1}px) {
-      ${args};
-    }
-  `;
-  return acc;
-}, {});
+const mediaQueries = (query) =>
+  Object.keys(breakpoints).reduce((acc, label) => {
+    const width = query === "min" ? breakpoints[label] + 1 : breakpoints[label];
+    acc[label] = (...args) => css`
+      @media (${query}-width: ${width}px) {
+        ${args};
+      }
+    `;
+    return acc;
+  }, {});
 
 export const theme = {
   media: {
     up: {
-      ...minMediaQueries,
+      ...mediaQueries("min"),
     },
     down: {
-      ...maxMediaQueries,
+      ...mediaQueries("max"),
     },
   },
 
   primaryDark: "#0D0C1D",
   primaryLight: "#dcdbdb",
   primaryHover: "#343078",
-  mobile: "576px",
 };
