@@ -149,9 +149,9 @@ const DesktopNavBar = styled.div`
   }
 `;
 
-function Header() {
+function Header(props) {
+  const { open, setOpen } = props;
   const activeStyle = { color: "#4BB3B9" };
-  const [open, setOpen] = React.useState(false);
 
   return (
     <>

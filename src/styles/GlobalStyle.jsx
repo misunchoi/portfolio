@@ -40,12 +40,22 @@ const GlobalStyle = createGlobalStyle`
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 0.75em;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
     }
 
     h1 {
         font-weight: bold;
         font-size: 36px;
         line-height: 42px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+          font-size: 24px;
+          line-height: 32px;
+        }
     }
 
     a {
@@ -56,8 +66,9 @@ const GlobalStyle = createGlobalStyle`
         word-break: break-word;
 
         @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
-          font-size: 17px;
-      }
+          font-size: 18px;
+          line-height: 22px;
+        }
     }
 
     
