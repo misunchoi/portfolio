@@ -27,14 +27,6 @@ const minMediaQueries = Object.keys(breakpoints).reduce((acc, label) => {
 }, {});
 
 export const theme = {
-  breakpoints: {
-    xs: 320,
-    sm: 576,
-    md: 768,
-    lg: 1026,
-    xl: 1200,
-  },
-
   media: {
     up: {
       ...minMediaQueries,

@@ -41,10 +41,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 28px;
         margin-bottom: 0.75em;
 
-        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+        ${({ theme }) => theme.media.down.sm`
           font-size: 18px;
           line-height: 22px;
-        }
+        `}
     }
 
     h1 {
@@ -52,10 +52,10 @@ const GlobalStyle = createGlobalStyle`
         font-size: 36px;
         line-height: 42px;
 
-        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+        ${({ theme }) => theme.media.down.sm`
           font-size: 24px;
           line-height: 32px;
-        }
+        `}
     }
 
     a {
@@ -65,10 +65,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 28px;
         word-break: break-word;
 
-        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+        ${({ theme }) => theme.media.down.sm`
           font-size: 18px;
           line-height: 22px;
-        }
+        `}
     }
 
     

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import styled, { ThemeProvider } from "styled-components";
-import GlobalStyle from "./styles/GlobalStyle";
+import GlobalStyle from "./styles/globalStyle";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { theme } from "./styles/theme";
