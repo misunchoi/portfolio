@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-    margin: 2em 0;
-
-    @media (max-width: ${props => props.theme.breakpoints.sm}px) {
-        margin: 1em 0;
-    }
+    margin: 1em 0;
+    ${({ theme }) => theme.media.up.md`margin: 2em 0;`}
 `;
 
 export const RowWrapper = styled.div`
@@ -15,10 +12,10 @@ export const RowWrapper = styled.div`
     width: fit-content;
     flex-wrap: wrap;
 
-    @media (max-width: ${props => props.theme.breakpoints.sm}px) {
+    ${({ theme }) => theme.media.down.lg`
         flex-direction: column;
         align-items: center;
-    }
+    `}
 `;
 
 export const StyledImage = styled.img`
@@ -28,12 +25,16 @@ export const StyledImage = styled.img`
     height: ${props => props.small ? '244' : '468'}px;
     object-fit: cover;
 
-    @media (max-width: ${props => props.theme.breakpoints.sm}px) {
+    ${({ theme }) => theme.media.down.md`
         width: 244px;
         height: 244px;
         box-shadow: -1em 1em #85EDF3;
         margin: 1em 0 1em 1em;
-    }
+    `}
+
+    ${({ theme }) => theme.media.down.lg`
+        margin: 2em 0 2em 2em;
+    `}
 `;
 
 export const Description = styled.div`
@@ -42,9 +43,9 @@ export const Description = styled.div`
     padding: ${props => props.long ? '2' : '4'}em;
     width: ${props => props.long ? '774' : '468'}px;
 
-    @media (max-width: ${props => props.theme.breakpoints.sm}px) {
+    ${({ theme }) => theme.media.down.lg`
         width: calc(80% + 1em);
         margin: 1em 0;
         padding: 2em;
-    }
+    `}
 `;

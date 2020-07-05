@@ -132,10 +132,7 @@ export const StyledMenu = styled.nav`
 
 const MobileNavBar = styled.div`
   display: block;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}px) {
-    display: none;
-  }
+  ${({ theme }) => theme.media.up.md`display: none;`}
 `;
 
 const DesktopNavBar = styled.div`
@@ -144,9 +141,7 @@ const DesktopNavBar = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
-    display: none;
-  }
+  ${({ theme }) => theme.media.down.md`display: none;`}
 `;
 
 function Header(props) {
