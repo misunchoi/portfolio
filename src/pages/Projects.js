@@ -16,7 +16,7 @@ const Projects = () => {
     <div>
       {projectDetails.map((list) => {
         return (
-          <RowWrapper>
+          <RowWrapper key={list.title}>
             <StyledImage
               src={list.icon}
               thumb={list.icon}

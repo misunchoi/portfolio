@@ -53,8 +53,9 @@ const GlobalStyle = createGlobalStyle`
         font-weight: normal;
         font-size: 24px;
         line-height: 28px;
+        word-break: break-word;
 
-        @media (max-width: ${props => props.theme.breakpoints.sm}px) {
+        @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
           font-size: 17px;
       }
     }

@@ -92,19 +92,19 @@ const StyledBurger = styled.button`
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background: ${({ theme }) => theme.primaryLight};
   height: 100vh;
   text-align: right;
-  padding: 2rem;
+  padding-top: 5rem;
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 80%;
   }
 
   a {
@@ -116,10 +116,12 @@ export const StyledMenu = styled.nav`
     color: ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
+    padding: 1em;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
+      min-width: 100%;
     }
 
     &:hover {
@@ -164,13 +166,28 @@ function Header() {
             <div />
           </StyledBurger>
           <StyledMenu open={open}>
-            <Link to="/" exact activeStyle={activeStyle}>
+            <Link
+              to="/"
+              exact
+              activeStyle={activeStyle}
+              onClick={() => setOpen(!open)}
+            >
               Home
             </Link>
-            <Link to="/projects" exact activeStyle={activeStyle}>
+            <Link
+              to="/projects"
+              exact
+              activeStyle={activeStyle}
+              onClick={() => setOpen(!open)}
+            >
               Projects
             </Link>
-            <Link to="/contact" exact activeStyle={activeStyle}>
+            <Link
+              to="/contact"
+              exact
+              activeStyle={activeStyle}
+              onClick={() => setOpen(!open)}
+            >
               Contact
             </Link>
           </StyledMenu>

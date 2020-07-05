@@ -40,7 +40,12 @@ function Footer() {
       <LinkWrapper>
         {footerLinks.map((data) => {
           return (
-            <Link href={data.linkUrl} rel="noopener noreferrer" target="_blank">
+            <Link
+              key={data.label}
+              href={data.linkUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {data.label}
             </Link>
           );

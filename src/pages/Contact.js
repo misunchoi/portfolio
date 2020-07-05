@@ -5,7 +5,7 @@ import {
   StyledImage,
   Section,
   Description,
-  RowWrapper
+  RowWrapper,
 } from "../components/CommonStyledComponents";
 import { contactDetails } from "../data/contact";
 
@@ -25,7 +25,7 @@ const Contact = () => {
         <Description>
           {contactDetails.map((contact) => {
             return (
-              <ContactDetailsContainer>
+              <ContactDetailsContainer key={contact.title}>
                 <h1>{contact.title}</h1>
                 <a
                   href={contact.link}
