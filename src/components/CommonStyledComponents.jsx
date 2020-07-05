@@ -29,7 +29,8 @@ export const StyledImage = styled.img`
     object-fit: cover;
 
     @media (max-width: ${props => props.theme.breakpoints.sm}px) {
-        width: 80%;
+        width: 244px;
+        height: 244px;
         box-shadow: -1em 1em #85EDF3;
         margin: 1em 0 1em 1em;
     }

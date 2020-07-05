@@ -18,7 +18,7 @@ const Home = () => {
           <p>
             Welcome to my portfolio website! I have professional experience in
             React.js, JavaScript, HTML, and CSS. I’m seeking opportunities as a
-            Software Engineer in San Diego :)
+            Software Engineer in San Diego! 
           </p>
         </Description>
       </RowWrapper>
