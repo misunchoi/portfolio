@@ -11,7 +11,7 @@ export const projectDetails = [
     title: "MK Decision",
     framework: "React.js, Moqui (Java, XML), GraphQL",
     description:
-      "Developed major features for Dashboard, SalesFunnel, AppFlow, SecureTransfer, SecureSign, Dynamic document generation, and CreditConnect.",
+      "Developed major features for Dashboard, SalesFunnel, AppFlow, and Dynamic document generation. Supported minor features and bug fixes for DecisionTime and CreditConnect",
     websiteLink: "https://michelle-misun-choi.netlify.com/",
   },
   {
