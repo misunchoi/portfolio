@@ -40,7 +40,7 @@ export const StyledImage = styled.img`
 export const Description = styled.div`
     background-color: #dcdbdb;
     margin: ${props => props.long ? '1em 1em 1em 2em' : '1em 1em 1em 4em'};
-    padding: ${props => props.long ? '2' : '4'}em;
+    padding: 2em;
     width: ${props => props.long ? '774' : '468'}px;
 
     ${({ theme }) => theme.media.down.lg`
