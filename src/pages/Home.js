@@ -13,12 +13,15 @@ const Home = () => {
       <RowWrapper>
         <StyledImage src={profilePicture} alt="Profile picture" />
         <Description>
-          <h1>Mi Sun Choi</h1>
-          <p>aka Michelle</p>
+          <h1>Michelle (Misun) Choi</h1>
+          <p>Welcome to my portfolio website!</p>
           <p>
-            Welcome to my portfolio website! I have professional experience in
-            React.js, JavaScript, HTML, and CSS. I’m seeking opportunities as a
-            Software Engineer in San Diego! 
+            I have professional experience in
+            React.js, JavaScript, HTML, CSS, GraphQL, and many more. I’m seeking opportunities as a
+            Software Engineer in San Diego. I'm eager to challenge myself by learning new technologies and building meaningful interfaces that'll help make many processes a lot more efficient for users.
+          </p>
+          <p>
+            I've been working as a Software Engineer and also as an UI Engineer at MK Decision and have grown my capacity to learn new technologies, lead and support team members, and deliver features in a fast-paced environment.
           </p>
         </Description>
       </RowWrapper>

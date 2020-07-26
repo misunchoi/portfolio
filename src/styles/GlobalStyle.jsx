@@ -37,38 +37,23 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 22px;
         margin-bottom: 0.75em;
-
-        ${({ theme }) => theme.media.down.sm`
-          font-size: 18px;
-          line-height: 22px;
-        `}
     }
 
     h1 {
         font-weight: bold;
-        font-size: 36px;
-        line-height: 42px;
-
-        ${({ theme }) => theme.media.down.sm`
-          font-size: 24px;
-          line-height: 32px;
-        `}
+        font-size: 24px;
+        line-height: 32px;
     }
 
     a {
         color: #4BB3B9;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 22px;
         word-break: break-word;
-
-        ${({ theme }) => theme.media.down.sm`
-          font-size: 18px;
-          line-height: 22px;
-        `}
     }
 
     
