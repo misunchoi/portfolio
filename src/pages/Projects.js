@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  StyledImage, RowWrapper, Description, Section,
+  StyledImage,
+  RowWrapper,
+  Description,
+  Section,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
 
@@ -28,20 +31,24 @@ const Projects = () => {
               <p>{list.framework}</p>
               <p>{list.description}</p>
               <LinksContainer>
-                <a
-                  href={list.websiteLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-                <a
-                  href={list.githubLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
+                {list.websiteLink && (
+                  <a
+                    href={list.websiteLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Website
+                  </a>
+                )}
+                {list.githubLink && (
+                  <a
+                    href={list.githubLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                )}
               </LinksContainer>
             </Description>
           </RowWrapper>
