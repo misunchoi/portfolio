@@ -14,7 +14,7 @@ const Home = () => {
       <RowWrapper>
         <LoadImage src={profilePicture} thumb={smallProfilePicture} alt="Profile picture" />
         <Description>
-          <h1>Michelle (Misun) Choi</h1>
+          <h1>Mi Sun Choi</h1>
           <p>Welcome to my portfolio website!</p>
           <p>
             I have professional experience in
