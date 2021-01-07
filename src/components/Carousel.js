@@ -16,7 +16,7 @@ function CarouselComponent() {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>Michelle Choi</h3>
+              <h3>Mi Sun Choi</h3>
               <p>Explore my portfolio site!</p>
             </Carousel.Caption>
           </Carousel.Item>

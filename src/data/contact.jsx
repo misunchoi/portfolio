@@ -11,7 +11,7 @@ export const contactDetails = [
   },
   {
     title: "LinkedIn",
-    link: "https://linkedin.com/in/michelle-misun-choi",
-    linkText: "linkedin.com/in/michelle-misun-choi",
+    link: "https://linkedin.com/in/misun-choi",
+    linkText: "linkedin.com/in/misun-choi",
   },
 ];

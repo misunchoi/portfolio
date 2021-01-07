@@ -28,8 +28,8 @@ export const projectDetails = [
     framework: "React.js",
     description:
       "Developed a portfolio website using React.js. Utilized Figma for web design.",
-    websiteLink: "https://michelle-misun-choi.netlify.com/",
-    githubLink: "https://github.com/misunchoi/portfolio",
+    websiteLink: "https://misunchoi-portfolio.netlify.app/",
+    githubLink: "https://github.com/misunchoi/portfolio/tree/misun-portfolio-site",
   },
   {
     icon: design,

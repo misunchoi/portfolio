@@ -24,7 +24,7 @@ const footerLinks = [
     icon: "",
     iconWidth: 75,
     label: "LinkedIn",
-    linkUrl: "https://www.linkedin.com/in/michelle-misun-choi/",
+    linkUrl: "https://www.linkedin.com/in/misun-choi/",
   },
   {
     icon: "",
