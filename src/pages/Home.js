@@ -1,17 +1,18 @@
 import React from "react";
 import profilePicture from "../images/profile-picture.png";
+import smallProfilePicture from "../images/profile-picture-small.png";
 import {
-  StyledImage,
   Section,
   Description,
   RowWrapper
 } from "../components/CommonStyledComponents";
+import LoadImage from "../components/LoadImage"
 
 const Home = () => {
   return (
     <Section>
       <RowWrapper>
-        <StyledImage src={profilePicture} alt="Profile picture" />
+        <LoadImage src={profilePicture} thumb={smallProfilePicture} alt="Profile picture" />
         <Description>
           <h1>Michelle (Misun) Choi</h1>
           <p>Welcome to my portfolio website!</p>

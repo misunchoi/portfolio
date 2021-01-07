@@ -1,14 +1,6 @@
 import React from "react";
 import "./image.css";
-import styled from 'styled-components'
-
-const StyledImage = styled.img`
-  margin: 1em;
-  box-shadow: -20px 20px #85EDF3;
-  ${props => props.width ? `width: ${props.width}px;` : ''}
-  ${props => props.blur ? `filter: blur(20px); transform: scale(1.1); transition: visibility 0ms ease 400ms;` : ''}
-  ${props => props.full ? `transition: opacity 400ms ease 0ms;` : ''}
-`;
+import { StyledImage } from "../components/CommonStyledComponents"
 
 const Image = props => {
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -19,7 +11,7 @@ const Image = props => {
         width={props.width}
         alt={props.alt}
         src={props.thumb}
-        style={{ display: isLoaded ? "none" : "" }}
+        style={{ display: isLoaded ? "none" : "", filter: "blur(4px)" }}
       />
       <StyledImage
         full
@@ -27,7 +19,7 @@ const Image = props => {
         onLoad={() => {
           setIsLoaded(true);
         }}
-        style={{ opacity: isLoaded ? 1 : 0 }}
+        style={{ display: !isLoaded ? "none" : "" }}
         alt={props.alt}
         src={props.src}
       />
