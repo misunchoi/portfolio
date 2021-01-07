@@ -1,12 +1,18 @@
-import house from "../images/ruby-icon.png";
-import website from "../images/gatsby-icon.png";
+import ruby from "../images/ruby-icon.png";
+import rubySmall from "../images/ruby-icon-small.png";
+import gatsby from "../images/gatsby-icon.png";
+import gatsbySmall from "../images/gatsby-icon-small.png";
 import react from "../images/react-icon.png";
+import reactSmall from "../images/react-icon-small.png";
 import design from "../images/figma-icon.png";
+import designSmall from "../images/figma-icon-small.png";
 import mkLogo from "../images/mkLogoBlue.png";
+import mkLogoSmall from "../images/mkLogoBlue-small.png";
 
 export const projectDetails = [
   {
     icon: mkLogo,
+    smallIcon: mkLogoSmall,
     iconWidth: 75,
     title: "MK Decision",
     framework: "React.js, Moqui (Java, XML), GraphQL",
@@ -16,6 +22,7 @@ export const projectDetails = [
   },
   {
     icon: react,
+    smallIcon: reactSmall,
     iconWidth: 75,
     title: "Portfolio Website",
     framework: "React.js",
@@ -26,6 +33,7 @@ export const projectDetails = [
   },
   {
     icon: design,
+    smallIcon: designSmall,
     iconWidth: 75,
     title: "Portfolio Design",
     framework: "Figma",
@@ -34,7 +42,8 @@ export const projectDetails = [
       "https://www.figma.com/file/x5U5vlgK7Mr78DLod449Wl/Portfolio-2.0?node-id=0%3A1",
   },
   {
-    icon: website,
+    icon: gatsby,
+    smallIcon: gatsbySmall,
     iconWidth: 75,
     title: "GND Website",
     framework: "Gatsby(React), Moqui(Java)",
@@ -44,7 +53,8 @@ export const projectDetails = [
     githubLink: "https://github.com/tfe-gnd-project/GND-website",
   },
   {
-    icon: house,
+    icon: ruby,
+    smallIcon: rubySmall,
     iconWidth: 75,
     title: "Apartment App",
     framework: "Ruby on Rails, React.js",

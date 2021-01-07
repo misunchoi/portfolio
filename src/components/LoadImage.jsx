@@ -12,6 +12,7 @@ const Image = props => {
         alt={props.alt}
         src={props.thumb}
         style={{ display: isLoaded ? "none" : "", filter: "blur(4px)" }}
+        small={props.small}
       />
       <StyledImage
         full
@@ -22,6 +23,7 @@ const Image = props => {
         style={{ display: !isLoaded ? "none" : "" }}
         alt={props.alt}
         src={props.src}
+        small={props.small}
       />
     </React.Fragment>
   );

@@ -1,12 +1,13 @@
 import React from "react";
 import contactBackground from "../images/contact-image.png";
+import smallContactBackground from "../images/contact-image-small.png";
 import styled from "styled-components";
 import {
-  StyledImage,
   Section,
   Description,
   RowWrapper,
 } from "../components/CommonStyledComponents";
+import LoadImage from "../components/LoadImage";
 import { contactDetails } from "../data/contact";
 
 const ContactDetailsContainer = styled.div`
@@ -17,10 +18,10 @@ const Contact = () => {
   return (
     <Section>
       <RowWrapper>
-        <StyledImage
+        <LoadImage
           src={contactBackground}
-          alt="Profile picture"
-          width={468}
+          thumb={smallContactBackground}
+          alt="Contact page image"
         />
         <Description>
           {contactDetails.map((contact) => {

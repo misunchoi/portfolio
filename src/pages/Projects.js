@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  StyledImage,
   RowWrapper,
   Description,
   Section,
 } from "../components/CommonStyledComponents";
 import { projectDetails } from "../data/projects";
+import LoadImage from "../components/LoadImage"
 
 const LinksContainer = styled.div`
   display: flex;
@@ -20,10 +20,10 @@ const Projects = () => {
       {projectDetails.map((list) => {
         return (
           <RowWrapper key={list.title}>
-            <StyledImage
+            <LoadImage
               src={list.icon}
-              thumb={list.icon}
-              alt="Profile picture"
+              thumb={list.smallIcon}
+              alt={list.title}
               small
             />
             <Description long>
